@@ -1,0 +1,112 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+:root{
+    --white:#EEFBFB;
+    --font-1:'Staatliches', cursive;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--white);
+}
+h1,h2,h3,h4,h5{ 
+    font-family: var(--font-1);
+}
+hr{
+    margin: 1rem 0;
+    border: 2px solid var(--white);
+}
+.navbar{
+    position: absolute;
+    z-index: 1;
+    padding: 1rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.navbar li{
+    font-family: var(--font-1);
+    list-style: none;
+    display: inline;
+}
+
+.navbar .left-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.navbar .left-part li{
+    margin-right: 5rem;
+}
+
+.navbar .right-part{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.navbar .right-part li{
+    margin-left: 5rem;
+}
+
+.navbar .logo img{
+    width: 2.5rem;
+    height: auto;
+}
+.navbar .left-part p{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.navbar a{
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.navbar a:hover{
+    color: var();
+    text-shadow:0px 0px 30px var();
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.banner-container{
+    position: relative;
+    text-align: center;
+}
+
+.banner-text{
+    font-family: var(--font-1);
+}
+
+.banner-text{
+    width: 80%;
+    text-shadow:0px 0px 30px var();
+    letter-spacing: .5rem;
+    color: var(--white);
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
